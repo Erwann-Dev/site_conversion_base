@@ -5,8 +5,12 @@ function xdecimal() {
 	hexadecimal = document.getElementById("hexadecimal");
 	binaire = document.getElementById("binaire");
 
+	if(decimal.value == ""){
+		decimal.value = prompt("Tu a oublier d'indiquer une valeur dans cette case indique la ici : ")
+	}
+
 	if(base.value == ""){
-		base.value = prompt("tu a oublier d'indiquer la base de ton choix indique la ici")
+		base.value = prompt("Tu a oublier d'indiquer la base de ton choix indique la ici : ")
 	}
 
 	hexadecimal.value = (decimal.value - 0).toString(16);
@@ -20,6 +24,10 @@ function xhexadecimal() {
 	decimal = document.getElementById("decimal");
 	hexadecimal = document.getElementById("hexadecimal");
 	binaire = document.getElementById("binaire");
+
+	if(hexadecimal.value == ""){
+		hexadecimal.value = prompt("Tu a oublier d'indiquer une valeur dans cette case indique la ici : ")
+	}
 
 	if(base.value == ""){
 		base.value = prompt("tu a oublier d'indiquer la base de ton choix indique la ici")
@@ -37,6 +45,10 @@ function xbinaire() {
 	hexadecimal = document.getElementById("hexadecimal");
 	binaire = document.getElementById("binaire");
 
+	if(binaire.value == ""){
+		binaire.value = prompt("Tu a oublier d'indiquer une valeur dans cette case indique la ici : ")
+	}
+
 	if(base.value == ""){
 		base.value = prompt("tu a oublier d'indiquer la base de ton choix indique la ici")
 	}
@@ -52,6 +64,10 @@ function base_demander() {
 	decimal = document.getElementById("decimal");
 	hexadecimal = document.getElementById("hexadecimal");
 	binaire = document.getElementById("binaire");
+
+	if(nbr_base.value == ""){
+		nbr_base.value = prompt("Tu a oublier d'indiquer une valeur dans cette case indique la ici : ")
+	}
 
 	if(base.value == ""){
 		base.value = prompt("tu a oublier d'indiquer la base de ton choix indique la ici")
