@@ -1,0 +1,9 @@
+input[type='text'] {
+	text-transform: uppercase;
+}
+
+form {
+	text-align: center;
+	margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
