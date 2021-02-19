@@ -1,9 +1,18 @@
 input[type='text'] {
 	text-transform: uppercase;
+	background-color: rgb(59, 59, 59);
 }
 
 form {
 	text-align: center;
 	margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
   transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+	
 }
+
+body{
+	background-color: rgb(59, 59, 59);
+}
+input[type="button"]{
+	background-color: rgb(59, 59, 59);
+ }
