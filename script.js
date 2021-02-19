@@ -77,3 +77,21 @@ function base_demander() {
 	binaire.value = (parseInt(nbr_base.value, base.value)).toString(2);
 	hexadecimal.value = (parseInt(nbr_base.value, base.value)).toString(16);
 }
+
+function quelle_touche(evenement,type) {
+	var touche = evenement.keyCode
+	console.log(touche,type)
+	if (touche==13 && type==1){
+		xdecimal()
+	}
+	else if (touche==13 && type==2){
+		xhexadecimal()
+	}
+	else if (touche==13 && type==3){
+		xbinaire()
+	}
+	else if (touche==13 && type==4){
+		base_demander()
+	}	
+  
+}

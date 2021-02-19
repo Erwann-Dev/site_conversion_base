@@ -8,20 +8,21 @@
 
 <body>
 	<form action="">
- 
-		<p><label for="decimal">Décimal&#160;: </label> <input type="text" id="decimal" name="decimal" >
-		<input type="button" name="submit1" value="&#8674;" onClick="xdecimal();"></p>
+		<div >
+		<p><label for="decimal">Décimal&#160;: </label> <input onkeypress="quelle_touche(event,1)" type="text" id="decimal" name="decimal" >
+		<input type="button" name="submit1" value="&#8674;" onClick="xdecimal()" ></p>
+		</div>
+
+		<p><label for="hexadecimal">Hexadécimal&#160;: </label> <input onkeypress="quelle_touche(event,2)" type="text" id="hexadecimal" name="hexadecimal">
+		<input type="button" name="submit2" value="&#8674;" onClick="xhexadecimal()"></p>
 		 
-		<p><label for="hexadecimal">Hexadécimal&#160;: </label> <input type="text" id="hexadecimal" name="hexadecimal">
-		<input type="button" name="submit2" value="&#8674;" onClick="xhexadecimal();"></p>
-		 
-		<p><label for="hexadecimal">Binaire&#160;: </label> <input type="text" id="binaire" name="binaire">
-		<input type="button" name="submit3" value="&#8674;" onClick="xbinaire();"></p>
+		<p><label for="hexadecimal">Binaire&#160;: </label> <input onkeypress="quelle_touche(event,3)" type="text" id="binaire" name="binaire">
+		<input type="button" name="submit3" value="&#8674;" onClick="xbinaire()"></p>
 
 		<p><label for="base">Base choisie&#160;: </label> <input type="text" id="base" name="base"></p>
 			
-		<p><label for="nbr_base">Chiffre dans la base choisie&#160;: </label> <input type="text" id="nbr_base" name="nbr_base">
-			<input type="button" name="submit4" value="&#8674;" onClick="base_demander();"></p>
+		<p><label for="nbr_base">Chiffre dans la base choisie&#160;: </label> <input onkeypress="quelle_touche(event,4)" type="text" id="nbr_base" name="nbr_base">
+			<input type="button" name="submit4" value="&#8674;" onClick="base_demander()"></p>
 		 
 		</form>
 	<script src='./script.js'></script>
