@@ -12,6 +12,7 @@ form {
 
 body{
 	background-color: rgb(59, 59, 59);
+	color : white;
 }
 input[type="button"]{
 	background-color: rgb(59, 59, 59);
